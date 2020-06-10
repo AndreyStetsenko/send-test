@@ -1,0 +1,163 @@
+@include('inc/header.html')
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-lg-7 col-md-6 col-12 col-full">
+      <div class="main-tite">
+        <h1 class="h1-title">Parrot Wings</h1>
+        <span class="second-title">Quickly. Conveniently. Safely.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+      </div>
+    </div>
+
+    <div class="col-lg-5 col-md-6 col-12 col-full">
+      <div class="card card-transfer">
+        <div class="form-progress">
+          <progress class="form-progress-bar" min="0" max="100" value="0" step="33" aria-labelledby="form-progress-completion"></progress>
+          <p id="form-progress-completion" class="js-form-progress-completion sr-only" aria-live="polite">0% complete</p>
+        </div>
+        <div class="card-body">
+          <div class="money-send">
+            <section class="section">
+              <div class="animation-container">
+                <!-- Step one -->
+                <div class="form-step js-form-step" data-step="1">
+                  <h1>Transfer Money</h1>
+                  <form action="" name="form-step-2" id="Form">
+                    <div class="fieldgroup">
+                      <input type="text" name="name" id="sender-name" required />
+                      <label for="token">Sender Name</label>
+                    </div>
+                    <div class="fieldgroup">
+                      <input type="number" name="sum" id="sum" required />
+                      <label for="token">Sum</label>
+                      <span class="nes"><i class="fas fa-dollar-sign"></i></span>
+                    </div>
+                    <div class="buttons">
+                      <button type="button" class="btn btn-alt js-reset">Reset</button>
+                      <button type="submit" class="btn">Continue</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- Step two -->
+                <div class="form-step js-form-step waiting hidden" data-step="2">
+                  <h1>Sign In</h1>
+                  <span class="form-step__phead">or <a href="#">Sign Up</a></span>
+                  <div class="auth-social">
+                    <span>Sign in using social networks</span>
+                    <ul>
+                      <li><a href="#" class="auth-google"><i class="fab fa-google"></i></a></li>
+                      <li><a href="#" class="auth-facebook"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#" class="auth-vk"><i class="fab fa-vk"></i></a></li>
+                      <li><a href="#" class="auth-instagram"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                  <form action="" name="form-step-1">
+                    <div class="fieldgroup">
+                      <input type="text" name="email" id="email" />
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="fieldgroup">
+                      <input type="password" name="password" id="password" />
+                      <label for="password">Password</label>
+                    </div>
+                    <div class="buttons">
+                      <button type="button" class="btn btn-alt js-reset">Reset</button>
+                      <button type="submit" class="btn">Continue</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- Step three -->
+                <div class="form-step js-form-step waiting hidden" data-step="3">
+                  <div class="check-ok">
+                    <span class="check-ok__icon"><i class="fas fa-check"></i></span>
+                  </div>
+                  <p class="form-instructions"><strong>You are authorized</strong>
+                    <br> An amount of $ 100 transferred to the account of the owner Andrew.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <div class="modal fade modal-pw" id="modalReg" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <div class="auth-social">
+          <span>Sign Up using social networks</span>
+          <ul>
+            <li><a href="#" class="auth-google"><i class="fab fa-google"></i></a></li>
+            <li><a href="#" class="auth-facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="auth-vk"><i class="fab fa-vk"></i></a></li>
+            <li><a href="#" class="auth-instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <form action="" name="form-step-1">
+          <div class="fieldgroup">
+            <input type="text" name="email" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="fieldgroup">
+            <input type="password" name="password" id="password" />
+            <label for="password">Password</label>
+          </div>
+          <div class="fieldgroup">
+            <input type="password" name="password-2" id="passwpr-2" />
+            <label for="password-2">Password</label>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-alt" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalAuth">Auth</button>
+            <button type="submit" class="btn">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade modal-pw" id="modalAuth" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <div class="auth-social">
+          <span>Sign In using social networks</span>
+          <ul>
+            <li><a href="#" class="auth-google"><i class="fab fa-google"></i></a></li>
+            <li><a href="#" class="auth-facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="auth-vk"><i class="fab fa-vk"></i></a></li>
+            <li><a href="#" class="auth-instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <form action="" name="form-step-1">
+          <div class="fieldgroup">
+            <input type="text" name="email" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="fieldgroup">
+            <input type="password" name="password" id="password" />
+            <label for="password">Password</label>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-alt" href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modalReg">Register</button>
+            <button type="submit" class="btn">Auth</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+@include('inc/footer.html')

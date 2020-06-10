@@ -1,0 +1,23 @@
+@media screen and (max-width: 991px) {
+  .h1-title {
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .second-title {
+    text-align: center;
+  }
+
+  .navbar-collapse.collapse.show {
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar-nav {
+    &__auth {
+      padding: 25px 0;
+      .nav-item {
+        text-align: center;
+      }
+    }
+  }
+}
